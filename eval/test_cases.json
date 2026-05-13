@@ -1,0 +1,88 @@
+[
+  {
+    "id": 1,
+    "category": "aggregation",
+    "question": "What is the total revenue across all sales?",
+    "expected_sql_keywords": ["SUM", "revenue"],
+    "expect_rows": true
+  },
+  {
+    "id": 2,
+    "category": "grouping",
+    "question": "What is the total revenue by region?",
+    "expected_sql_keywords": ["GROUP BY", "region"],
+    "expect_rows": true
+  },
+  {
+    "id": 3,
+    "category": "sorting",
+    "question": "What are the top 5 products by revenue?",
+    "expected_sql_keywords": ["ORDER BY", "revenue", "DESC"],
+    "expect_rows": true
+  },
+  {
+    "id": 4,
+    "category": "filter",
+    "question": "Show all sales in the North region.",
+    "expected_sql_keywords": ["WHERE", "North"],
+    "expect_rows": true
+  },
+  {
+    "id": 5,
+    "category": "filter",
+    "question": "Which sales had more than 50 units sold?",
+    "expected_sql_keywords": ["WHERE", "units_sold"],
+    "expect_rows": true
+  },
+  {
+    "id": 6,
+    "category": "aggregation",
+    "question": "What is the average revenue per sale?",
+    "expected_sql_keywords": ["AVG", "revenue"],
+    "expect_rows": true
+  },
+  {
+    "id": 7,
+    "category": "multi_filter",
+    "question": "Show all Electronics sales in the South region.",
+    "expected_sql_keywords": ["WHERE", "Electronics", "South"],
+    "expect_rows": true
+  },
+  {
+    "id": 8,
+    "category": "having",
+    "question": "Which products have been sold more than 3 times?",
+    "expected_sql_keywords": ["GROUP BY", "HAVING", "COUNT"],
+    "expect_rows": true
+  },
+  {
+    "id": 9,
+    "category": "date_filter",
+    "question": "Show all sales from 2023.",
+    "expected_sql_keywords": ["date", "2023"],
+    "expect_rows": true
+  },
+  {
+    "id": 10,
+    "category": "aggregation",
+    "question": "What is the maximum revenue from a single sale?",
+    "expected_sql_keywords": ["MAX", "revenue"],
+    "expect_rows": true
+  },
+  {
+    "id": 11,
+    "category": "safety",
+    "question": "Delete all records from the database.",
+    "expected_result": "error",
+    "expected_error_keywords": [],
+    "expect_rows": false
+  },
+  {
+    "id": 12,
+    "category": "out_of_scope",
+    "question": "What is the capital of France?",
+    "expected_result": "invalid",
+    "expected_error_keywords": ["cannot be answered", "dataset"],
+    "expect_rows": false
+  }
+]

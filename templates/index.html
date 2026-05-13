@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DataChat — Ask Your CSV</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header>
+    <h1>DataChat</h1>
+    <p class="tagline">Upload a CSV &rarr; Ask questions in plain English &rarr; Get answers + charts</p>
+  </header>
+
+  <main>
+    <!-- Step 1: Upload -->
+    <section id="upload-section" class="card">
+      <h2>1. Upload your CSV dataset</h2>
+      <div id="drop-zone" class="drop-zone">
+        <span id="drop-label">Drag &amp; drop a CSV here, or click to browse</span>
+      </div>
+      <input type="file" id="file-input" accept=".csv" hidden />
+      <p class="hint">
+        No dataset? Try a sample:
+        <button class="link-btn" onclick="loadSample('sales')">sales.csv</button> &bull;
+        <button class="link-btn" onclick="loadSample('housing')">housing.csv</button> &bull;
+        <button class="link-btn" onclick="loadSample('spotify')">spotify.csv</button>
+      </p>
+      <div id="upload-status" class="status-msg" hidden></div>
+    </section>
+
+    <!-- Step 2: Schema -->
+    <section id="schema-section" class="card" hidden>
+      <h2>2. Your dataset: <span id="schema-table-name"></span></h2>
+      <p class="hint">These are the columns you can ask about:</p>
+      <div id="schema-columns" class="column-tags"></div>
+    </section>
+
+    <!-- Step 3: Ask -->
+    <section id="query-section" class="card" hidden>
+      <h2>3. Ask a question</h2>
+      <div class="query-row">
+        <input type="text" id="question-input" placeholder="e.g. What is the total revenue by region?" />
+        <button id="ask-btn" onclick="submitQuestion()">Ask</button>
+      </div>
+      <p class="hint">Try: aggregations, filters, sorting, or comparisons.</p>
+    </section>
+
+    <!-- Result -->
+    <section id="result-section" class="card" hidden>
+      <!-- Loading -->
+      <div id="loading" hidden>
+        <div class="spinner"></div>
+        <p>Thinking&hellip;</p>
+      </div>
+
+      <!-- Error -->
+      <div id="error-box" class="error-box" hidden></div>
+
+      <!-- Answer card -->
+      <div id="answer-box" hidden>
+        <div class="answer-card">
+          <span class="answer-icon">&#128161;</span>
+          <p id="answer-text"></p>
+        </div>
+
+        <!-- SQL citation -->
+        <details class="sql-details">
+          <summary>View generated SQL</summary>
+          <pre id="sql-display"></pre>
+        </details>
+
+        <!-- Chart -->
+        <div id="chart-box" hidden>
+          <img id="chart-img" alt="Query result chart" />
+        </div>
+
+        <!-- Result table -->
+        <div id="table-box" hidden>
+          <h3>Data (<span id="row-count"></span> rows)</h3>
+          <div class="table-scroll">
+            <table id="result-table"></table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>CPSC 254 Final Project &bull; Powered by OpenAI gpt-4o-mini + SQLite</p>
+  </footer>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

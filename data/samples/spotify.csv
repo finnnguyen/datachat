@@ -1,0 +1,98 @@
+track,artist,streams,genre,year,duration_sec,explicit
+Blinding Lights,The Weeknd,3500000000,Pop,2019,200,0
+Shape of You,Ed Sheeran,3200000000,Pop,2017,234,0
+Dance Monkey,Tones and I,2900000000,Pop,2019,209,0
+Rockstar,Post Malone,2600000000,Hip-Hop,2017,218,1
+One Dance,Drake,2400000000,Hip-Hop,2016,173,0
+Sunflower,Post Malone,2300000000,Hip-Hop,2018,158,0
+HUMBLE.,Kendrick Lamar,2100000000,Hip-Hop,2017,177,1
+God's Plan,Drake,2000000000,Hip-Hop,2018,198,0
+Photograph,Ed Sheeran,1950000000,Pop,2014,258,0
+Thinking Out Loud,Ed Sheeran,1900000000,Pop,2014,281,0
+Stay,The Kid LAROI,1850000000,Pop,2021,141,1
+Levitating,Dua Lipa,1800000000,Pop,2020,203,0
+Bad Guy,Billie Eilish,1750000000,Alternative,2019,194,0
+Don't Start Now,Dua Lipa,1700000000,Pop,2019,183,0
+Watermelon Sugar,Harry Styles,1650000000,Pop,2019,174,0
+Drivers License,Olivia Rodrigo,1600000000,Pop,2021,242,0
+Good 4 U,Olivia Rodrigo,1550000000,Pop,2021,178,1
+positions,Ariana Grande,1500000000,Pop,2020,172,0
+Savage,Megan Thee Stallion,1450000000,Hip-Hop,2020,211,1
+Peaches,Justin Bieber,1400000000,Pop,2021,198,1
+INDUSTRY BABY,Lil Nas X,1380000000,Hip-Hop,2021,212,1
+Montero,Lil Nas X,1350000000,Pop,2021,137,1
+Physical,Dua Lipa,1320000000,Pop,2020,194,0
+Therefore I Am,Billie Eilish,1300000000,Alternative,2020,174,0
+Mood,24kGoldn,1280000000,Hip-Hop,2020,140,1
+Dynamite,BTS,1250000000,Pop,2020,199,0
+Butter,BTS,1220000000,Pop,2021,164,0
+Permission to Dance,BTS,1200000000,Pop,2021,187,0
+Kiss Me More,Doja Cat,1180000000,Pop,2021,208,0
+Need to Know,Doja Cat,1150000000,Pop,2021,215,1
+Planet Her,Doja Cat,1120000000,Pop,2021,148,1
+Streets,Doja Cat,1100000000,Pop,2019,187,0
+Say So,Doja Cat,1080000000,Pop,2019,237,0
+Options,Doja Cat,1050000000,Pop,2020,192,1
+Like That,Doja Cat,1020000000,Hip-Hop,2020,256,1
+Rockstar,DaBaby,1000000000,Hip-Hop,2020,181,1
+WHATS POPPIN,Jack Harlow,980000000,Hip-Hop,2020,152,1
+Laugh Now Cry Later,Drake,960000000,Hip-Hop,2020,258,1
+Franchise,Travis Scott,940000000,Hip-Hop,2020,186,1
+The Box,Roddy Ricch,920000000,Hip-Hop,2019,196,1
+High Fashion,Roddy Ricch,900000000,Hip-Hop,2020,183,1
+Heartless,Kanye West,880000000,Hip-Hop,2019,187,1
+Follow God,Kanye West,860000000,Hip-Hop,2019,131,1
+Ghost Town,Kanye West,840000000,Alternative,2018,328,0
+Violent Crimes,Kanye West,820000000,Hip-Hop,2018,264,1
+Waves,Kanye West,800000000,Hip-Hop,2016,258,0
+FML,Kanye West,780000000,Hip-Hop,2016,348,1
+30 Hours,Kanye West,760000000,Hip-Hop,2016,345,1
+Famous,Kanye West,740000000,Hip-Hop,2016,262,1
+Ultralight Beam,Kanye West,720000000,Gospel,2016,328,0
+Cold,Maroon 5,700000000,Pop,2016,209,0
+What Lovers Do,Maroon 5,680000000,Pop,2017,189,0
+Girls Like You,Maroon 5,660000000,Pop,2017,205,0
+Animals,Maroon 5,640000000,Pop,2014,231,0
+Maps,Maroon 5,620000000,Pop,2014,194,0
+One More Night,Maroon 5,600000000,Pop,2012,200,0
+Payphone,Maroon 5,580000000,Pop,2012,229,0
+Moves Like Jagger,Maroon 5,560000000,Pop,2011,201,0
+Stereo Hearts,Gym Class Heroes,540000000,Pop,2011,229,0
+Forget You,Cee Lo Green,520000000,Pop,2010,213,0
+Rolling in the Deep,Adele,500000000,Pop,2010,228,0
+Someone Like You,Adele,480000000,Pop,2011,285,0
+Set Fire to the Rain,Adele,460000000,Pop,2011,242,0
+Skyfall,Adele,440000000,Pop,2012,286,0
+Hello,Adele,420000000,Pop,2015,295,0
+Send My Love,Adele,400000000,Pop,2016,209,0
+Water Under the Bridge,Adele,380000000,Pop,2015,259,0
+Million Years Ago,Adele,360000000,Pop,2015,229,0
+All I Ask,Adele,340000000,Pop,2015,261,0
+Love in the Dark,Adele,320000000,Pop,2015,265,0
+Remedy,Adele,300000000,Pop,2015,258,0
+Sweetest Devotion,Adele,280000000,Pop,2015,276,0
+River Lea,Adele,260000000,Pop,2015,223,0
+Flat Line,Adele,240000000,Pop,2015,245,0
+I Miss You,Adele,220000000,Pop,2015,285,0
+Why Do You Love Me,Adele,200000000,Pop,2020,195,0
+Easy On Me,Adele,180000000,Pop,2021,224,0
+Oh My God,Adele,160000000,Pop,2021,224,0
+Can I Get It,Adele,140000000,Pop,2021,219,0
+I Drink Wine,Adele,120000000,Pop,2021,375,0
+Hold On,Adele,100000000,Pop,2021,337,0
+Cry Your Heart Out,Adele,80000000,Pop,2021,261,0
+Love Is a Game,Adele,60000000,Pop,2021,298,0
+My Little Love,Adele,50000000,Pop,2021,488,0
+To Be Loved,Adele,45000000,Pop,2021,384,0
+Wild Wild West,Adele,40000000,Pop,2021,242,0
+Strangers by Nature,Adele,35000000,Pop,2021,150,0
+Shivers,Ed Sheeran,900000000,Pop,2021,207,0
+Bad Habits,Ed Sheeran,1200000000,Pop,2021,231,0
+Overpass Graffiti,Ed Sheeran,300000000,Pop,2021,211,0
+The Joker and the Queen,Ed Sheeran,250000000,Pop,2022,218,0
+2step,Ed Sheeran,200000000,Pop,2022,195,0
+Stop the Rain,Ed Sheeran,150000000,Pop,2022,234,0
+Visiting Hours,Ed Sheeran,180000000,Pop,2022,234,0
+Tides,Ed Sheeran,130000000,Pop,2022,183,0
+Sandman,Ed Sheeran,120000000,Pop,2022,201,0
+Be Right Now,Ed Sheeran,110000000,Pop,2022,198,0
