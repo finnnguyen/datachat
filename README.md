@@ -34,7 +34,9 @@ cp .env.example .env
 python app.py
 ```
 
-Open **http://localhost:5000** in your browser.
+Open **http://localhost:5001** in your browser.
+
+> **macOS note:** Port 5000 is reserved by AirPlay Receiver on macOS Monterey and later. The app runs on port 5001 to avoid this conflict.
 
 > **Note:** Each server restart clears active sessions. Re-upload your CSV after restarting.
 
