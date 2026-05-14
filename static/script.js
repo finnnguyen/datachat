@@ -152,7 +152,7 @@ async function submitQuestion() {
 
 // Allow Enter key in the question input
 document.getElementById("question-input").addEventListener("keydown", (e) => {
-  if (e.key === "Enter") submitQuestion();
+  if (e.key === "Enter" && !document.getElementById("ask-btn").disabled) submitQuestion();
 });
 
 // ── Render helpers ──────────────────────────────────────────────────────────────
