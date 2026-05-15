@@ -16,7 +16,7 @@ The pipeline goes beyond a single LLM call: question â†’ SQL generation (LLM) â†
 
 ```bash
 # 1. Clone the repo
-git clone <your-repo-url>
+git clone https://github.com/finnnguyen/datachat.git
 cd cpsc254_final_project
 
 # 2. Create and activate a virtual environment
