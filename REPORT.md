@@ -62,7 +62,7 @@ I will trace what happens when a user uploads sales.csv and asks "What is the to
 
 ## Part 4 — AI Disclosure & Safety
 
-Throughout this project, I used Claude Code as an AI assistant to support my coding process. It helped me generate code, debug errors, improve the structure of the project, and check grammar in my writing. I still reviewed and tested the code to make sure it worked for my project requirements.
+I used Claude Code as my AI assistant throughout this project. It helped me write most of the code and fix bugs. I also used it to check my grammar and clean up some sentences in this report.
 
 **Three times it gave me wrong answers and I had to fix it:**
 
