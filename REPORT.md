@@ -16,7 +16,7 @@ The hard part about getting the AI to work right is that every CSV file is diffe
 
 **Change:** The first version of my prompt just gave the model the table schema and five basic rules. Things like "only use SELECT" and "return raw SQL only." I did not include any example queries.
 
-**Motivating example:** Test case #1 was "What is the total revenue across all sales?" The model returned INVALID_QUESTION instead of writing a SUM query. The phrase "across all sales" confused it into thinking the question could not be answered. Same thing happened with case #6, "What is the average revenue per sale?" — the phrase "per sale" made the model think there was a column called "sale" that did not exist.
+**Motivating example:** Test case #1 was "What is the total revenue across all sales?" The model returned INVALID_QUESTION instead of writing a SUM query. The phrase "across all sales" confused it into thinking the question could not be answered. Same thing happened with case #6, "What is the average revenue per sale?" the phrase "per sale" made the model think there was a column called "sale" that did not exist.
 
 **Delta:** 8/12 = 66.7% correct.
 
@@ -28,7 +28,7 @@ The hard part about getting the AI to work right is that every CSV file is diffe
 
 **Change:** I added four example question and SQL pairs directly into the prompt. One showed how to write a COUNT query, one showed GROUP BY with SUM, one showed HAVING COUNT(*), and one showed ORDER BY with LIMIT.
 
-**Motivating example:** Test case #8 was "Which products have been sold more than 3 times?" In V1 it failed because the model wrote HAVING SUM(units_sold) > 3 instead of HAVING COUNT(*) > 3. It used the wrong aggregation function. After I added an example showing the correct HAVING COUNT(*) syntax, the model got it right every time.
+**Motivating example:** Test case #8 was "Which products have been sold more than 3 times?" In V1 it failed because the model wrote HAVING SUM(units_sold) > 3 instead of HAVING COUNT(*) > 3 . It used the wrong aggregation function. After I added an example showing the correct HAVING COUNT(*) syntax, the model got it right every time.
 
 **Delta:** 8/12 → 10/12 (66.7% → 83.3%).
 
