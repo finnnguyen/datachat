@@ -26,7 +26,7 @@ The hard part about getting the AI to work right is that every CSV file is diffe
 
 ### V2 — Added few-shot examples to the prompt
 
-**Change:** I added four example question-and-SQL pairs directly into the prompt. One showed how to write a COUNT query, one showed GROUP BY with SUM, one showed HAVING COUNT(*), and one showed ORDER BY with LIMIT.
+**Change:** I added four example question and SQL pairs directly into the prompt. One showed how to write a COUNT query, one showed GROUP BY with SUM, one showed HAVING COUNT(*), and one showed ORDER BY with LIMIT.
 
 **Motivating example:** Test case #8 was "Which products have been sold more than 3 times?" In V1 it failed because the model wrote HAVING SUM(units_sold) > 3 instead of HAVING COUNT(*) > 3. It used the wrong aggregation function. After I added an example showing the correct HAVING COUNT(*) syntax, the model got it right every time.
 
@@ -62,15 +62,15 @@ I will trace what happens when a user uploads sales.csv and asks "What is the to
 
 ## Part 4 — AI Disclosure & Safety
 
-I used Claude Code as my AI assistant throughout this project. It helped me write most of the code and fix bugs.
+Throughout this project, I used Claude Code as an AI assistant to support my coding process. It helped me generate code, debug errors, improve the structure of the project, and check grammar in my writing. I still reviewed and tested the code to make sure it worked for my project requirements.
 
 **Three times it gave me wrong answers and I had to fix it:**
 
 1. Claude set up the OpenAI client at the top of sql_generator.py when the module was imported. This caused an error every time I ran any test without an API key set, even if I was just testing the CSV loading or SQL execution. I had to rewrite it so the client only gets created when the first actual API call happens. I moved it into a function called _get_client() so it is lazy and does not crash on import.
 
-2. Claude's original chart_generator.py tried to make a chart from any query result, even ones with 5 columns and 100 rows. The bar chart came out with 100 overlapping labels that were impossible to read. I removed that fallback and made the chart code only work on clean 2-column results like GROUP BY outputs.
+2. Claude's original chart_generator.py tried to make a chart from any query result, even ones with 5 columns and 100 rows. The bar chart came out with 100 overlapping labels that were impossible to read. I removed that fallback and made the chart code only work on clean 2 column results like GROUP BY outputs.
 
-3. Claude wrote an arrow function for the drag-and-drop file handler that used the await keyword inside a regular non-async function. This is a syntax error in JavaScript. The whole script.js file failed to load silently, which broke every click handler on the page including the upload button and the Ask button. I had to add the word async to that function.
+3. Claude wrote an arrow function for the drag and drop file handler that used the await keyword inside a regular non async function. This is a syntax error in JavaScript. The whole script.js file failed to load silently, which broke every click handler on the page including the upload button and the Ask button. I had to add the word async to that function.
 
 **Safety risk:**
 
