@@ -62,7 +62,7 @@ I will trace what happens when a user uploads sales.csv and asks "What is the to
 
 ## Part 4 — AI Disclosure & Safety
 
-I used Claude Code as my AI assistant throughout this project. It helped me write most of the code and fix bugs. I also used it to check my grammar and clean up some sentences in this report. It helped me generate code Walkthrough  and safety risk.
+I used Claude Code as my AI assistant throughout this project. It helped me write most of the code and fix bugs. I also used it to check my grammar and clean up some sentences in this report. It helped me generate code Walkthrough, safety risk and make readme.md professional.
 
 **Three times it gave me wrong answers and I had to fix it:**
 
