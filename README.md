@@ -127,3 +127,7 @@ datachat/
 ## Built by
 
 **Finn Nguyen** — CPSC 254 · Cal State Fullerton
+
+---
+
+[→ Featured on my portfolio](https://finn-portfolio-phi.vercel.app)
