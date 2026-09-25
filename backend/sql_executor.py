@@ -9,6 +9,9 @@ def run_query(sql: str, db_path: str = DB_PATH) -> tuple[list[dict], str]:
     """
     try:
         conn = sqlite3.connect(db_path)
+        # Enforce read-only at the database layer, independent of the keyword blocklist.
+        # CSV loading uses its own connection in csv_processor.py, so it is unaffected.
+        conn.execute("PRAGMA query_only = ON")
         conn.row_factory = sqlite3.Row
         cursor = conn.execute(sql)
         rows = [dict(row) for row in cursor.fetchall()]

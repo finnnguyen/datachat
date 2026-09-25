@@ -50,6 +50,7 @@ python eval/eval.py                      # V3 (default)
 
 - **Prompt injection:** CSV column names are sanitized (letters, numbers, underscores only) before entering the LLM prompt — prevents malicious column names from hijacking the model
 - **SQL validation:** Any output that doesn't start with `SELECT` or contains blocked keywords (`DROP`, `DELETE`, `INSERT`, etc.) is rejected before execution
+- **Read-only database:** queries run on a read-only SQLite connection (`PRAGMA query_only`), with the keyword blocklist as a first layer
 
 ---
 
